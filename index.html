@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" type="image/png" href="/pamina/img/favicon.png" />
+	<title>Passe Partout</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#59B5CD;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1920" />
+	<link href='https://fonts.googleapis.com/css?family=Unkempt:700&subset=latin' rel='stylesheet' type='text/css'>
+
+	<!-- end copy -->
+
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="animationgenerique_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="animation%20generique.hyperesources/animationgenerique_hype_generated_script.js?71658"></script>
+	</div>
+
+	<!-- end copy -->
+	<script type="text/javascript">
+	  		// window.load(function() {
+		// 	chromeFrameInitializers(document);
+		// });
+	  	function myCallback(hypeDocument, element, event) {
+	    // do something with hypeDocument...
+	    // HYPE.documents["documentName"] which is the same thing is also ready now
+	     //console.log(HYPE.documents["animation generique"]);
+	    // var hypebouton = hypeDocument.getElementById('checkConnect');
+	    // console.log(hypebouton);
+
+	    window.addEventListener('load', function () {
+
+	  		var navigateur = checkNavigator();
+
+	    	if (navigateur == "Google Chrome") {
+			    // CHROME
+			    var myChrome = hypeDocument.getElementById('myFrame').children[0];
+			    // console.log(myChrome.contentWindow);
+				var chromeButton = myChrome.contentWindow.document.getElementById('checkConnect');
+				chromeButton.onclick = function() {
+				    	setTimeout(function() {
+							// Quand le site est en maintenance
+				    		// window.top.location.replace("https://www.mon-passepartout.eu/pamina/vue/maintenance.php");
+				    		// Sinon
+							window.location.href = '/pamina/vue/jeuAccueil.php';
+				    	},1000);
+				}
+			    myChrome.contentWindow.addEventListener('load', function () {
+				// console.log(myChrome.contentWindow);
+				var chromeDoc = myChrome.contentWindow.document;
+				var chromeButton = chromeDoc.getElementById('checkConnect');
+			   	// console.log(chromeButton);
+
+			    	chromeButton.onclick = function() {
+				    	setTimeout(function() {
+							// Quand le site est en maintenance
+				    		// window.top.location.replace("https://www.mon-passepartout.eu/pamina/vue/maintenance.php");
+				    		// Sinon
+							window.location.href = '/pamina/vue/jeuAccueil.php';
+				    	},1000);
+				    }
+
+			     });
+			     // CHROME
+			}else if (navigateur == "Mozilla Firefox") {
+		    	// MOZILLA
+			  	var ttt = hypeDocument.getElementById('myFrame').children[0];
+			    // console.log(ttt);
+			    var iframeDocument = ttt.contentDocument;
+			    // console.log(iframeDocument);
+			    var monBoutton = iframeDocument.getElementById('checkConnect');
+			    // console.log(monBoutton);
+			    monBoutton.onclick = function() {
+			    	setTimeout(function() {
+						// Quand le site est en maintenance
+			    		// window.top.location.replace("https://www.mon-passepartout.eu/pamina/vue/maintenance.php");
+			    		// Sinon
+						window.location.href = '/pamina/vue/jeuAccueil.php';
+			    	},1000);
+			    };
+			    // MOZILLA
+			}else{
+		    // CHROME
+		    var myChrome = hypeDocument.getElementById('myFrame').children[0];
+		    console.log(myChrome.contentWindow);
+			    var chromeButton = myChrome.contentWindow.document;
+		    	// console.log(chromeButton);
+		     myChrome.contentWindow.addEventListener('load', function () {
+			    // console.log(myChrome.contentWindow);
+			    var chromeDoc = myChrome.contentWindow.document;
+			    var chromeButton = chromeDoc.getElementById('checkConnect');
+		    	// console.log(chromeButton);
+
+		    	chromeButton.onclick = function() {
+			    	setTimeout(function() {
+			    		// Quand le site est en maintenance
+			    		// window.top.location.replace("https://www.mon-passepartout.eu/pamina/vue/maintenance.php");
+			    		// Sinon
+						window.location.href = '/pamina/vue/jeuAccueil.php';
+			    	},1000);
+			    }
+
+		     });
+		     // CHROME
+			}
+
+		})
+
+	    return true;
+	  }
+
+	  if("HYPE_eventListeners" in window === false) {
+	    window.HYPE_eventListeners = Array();
+	  }
+	  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+
+	  function checkNavigator() {
+	  	var sBrowser, sUsrAg = navigator.userAgent;
+
+		if(sUsrAg.indexOf("Chrome") > -1) {
+		    sBrowser = "Google Chrome";
+		} else if (sUsrAg.indexOf("Safari") > -1) {
+		    sBrowser = "Apple Safari";
+		} else if (sUsrAg.indexOf("Opera") > -1) {
+		    sBrowser = "Opera";
+		} else if (sUsrAg.indexOf("Firefox") > -1) {
+		    sBrowser = "Mozilla Firefox";
+		} else if (sUsrAg.indexOf("MSIE") > -1) {
+		    sBrowser = "Microsoft Internet Explorer";
+		}
+
+		return sBrowser;
+	  }
+
+	</script>
+  </body>
+
+</html>

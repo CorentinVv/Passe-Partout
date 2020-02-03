@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Les partenaires</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/png" href="/pamina/img/favicon.png" />		
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+
+		.imgCenter {
+			text-align: center;
+		}
+		.imgLogo {
+			max-width: 100%;
+		}
+		.myBreadcrumb {
+			padding: 8px 15px;
+			/*padding-left: 5%;*/
+		}
+		.myBreadcrumb>li {
+			display: inline-block;
+		}
+		.myBreadcrumb>li+li:before {
+		    content: "\276F";
+		    padding: 0 5px;
+	    	color: #ccc;
+		}
+		.titleUp{
+		    margin-top: 65px;
+		    font-size: 2em;
+		    padding-left: 3%;
+		    font-weight: bold;
+		    color: white;
+		}
+		#partDetails{
+			display: none;
+		}
+		.allPart{
+			display: none;
+		}
+		.collect ~ p{
+			color: rgb(131, 71, 175);
+			font-weight: bold;
+			padding-left: 3%;
+			cursor: pointer;
+		}
+		.instit ~ p{
+			color: rgb(209, 111, 19);
+		}
+		.multiMed ~ p{
+			color: rgb(0, 185, 99);
+		}
+		.assoc ~ p{
+			color: #f44336;
+		}
+		.autres ~ p{
+			color: #607d8b;
+		}
+
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: 768px) { 
+			.titleUp{
+			    margin-top: 55px;
+			    font-size: 3em;
+			    padding-left: 2%;
+			}
+			.imgCenter {
+				text-align: left;
+			}
+			.imgLogo {
+				max-width: 40%;
+			}
+		}
+
+		/* Medium devices (desktops, 992px and up) */
+		@media (min-width: 992px) {  
+			.titleUp{
+			    margin-top: 45px;font-size: 4em;padding-left: 1%;
+			}
+			#pdfViewer{
+				width: 70%;
+			}
+		}
+
+		/* Large devices (large desktops, 1200px and up) */
+		@media (min-width: 1200px) {  
+			.titleUp{
+			    margin-top: 45px;font-size: 4em;padding-left: 1%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div style="background-image: url('../../img/bandeau-logo.png');height: 177px;background-position: right;" class="row">
+			<div class="titleUp">Partenaires</div>
+		</div>
+		<div id="partView">
+			<div class="row">
+				<ol class="myBreadcrumb" style="margin-bottom: 0px;padding-bottom: 0px;margin-top: 1%;">
+				  <li><a href="../../../">Connexion</a></li>
+				  <li class="active">Partenaires</li>
+				</ol>
+			</div>
+			<div>
+				<h3 class="collect">Collectivités</h3>
+				<p id="c1">Eurodistrict PAMINA</p>
+				<p id="c2">Eurodistrict Strasbourg-Ortenau</p>
+				<p id="c3">Landkreis Breisgau-Hochschwarzwald</p>
+				<p id="c4">Eurodistrict de Bâle</p>
+
+				<h3 class="instit">Institutions</h3>
+				<p id="i1">Regierungspräsidium Karlsruhe</p>
+				<p id="i2">Académie de Strasbourg</p>
+				<p id="i3">Réseau Canopé</p>
+				<p id="i4">Ministerium für Bildung des Landes Rheinland-Pfalz</p>
+				<p id="i5">Aufsichts- und Dienstleistungsdirektion</p>
+
+				<h3 class="multiMed">Centres Multi-médias</h3>
+				<p id="m1">Kreismedienzentrum Freiburg</p>
+				<p id="m2">Medienzentrum Südliche Weinstraße – Landau</p>
+				<p id="m3">Centre des médias de Karlsruhe</p>
+				
+				<h3 class="assoc">Associations</h3>
+				<p id="as1">Fédération des Maisons des Jeunes et de la Culture d’Alsace</p>
+				<p id="as2">Réseau Express Jeunes</p>
+				<p id="as3">L’Association de Développement et de Coopération Régionale « Olza »</p>
+				<p id="as4">L’association régionale de coopération territoriale Teschen Silesia</p>
+				
+				<h3 class="autres">Autres Partenaires</h3>
+				<p id="a1">Interreg V Rhin supérieur</p>
+				<p id="a2">GeoRhena</p>
+			</div>
+		</div>
+		<div id="partDetails">
+			<div class="row">
+				<ol class="myBreadcrumb" style="margin-bottom: 0px;padding-bottom: 0px;margin-top: 1%;">
+				  <li><a href="../../../">Connexion</a></li>
+				  <li><a href="https://www.mon-passepartout.eu/pamina/vue/generique/partenaires.html">Partenaires</a></li>
+				  <li class="active"></li>
+				</ol>
+			</div>
+			<!-- Collectivités -->
+			<div class="allPart" id="c1det">
+				<h2>Eurodistrict PAMINA</h2>
+				<div class="imgCenter">
+					<a href="http://www.eurodistrict-pamina.eu" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/pamina.png" alt="Logo Eurodistrict PAMINA" />
+					</a>
+				</div>
+				<div>
+					L’Eurodistrict PAMINA est un Groupement Européen de Coopération Territoriale (GECT) ayant pour objectif de simplifier et intensifier la coopération transfrontalière dans sa région. Parmi les quatre Eurodistricts, il s’agit de l’Eurodistrict situé le plus au Nord, qui s’étend sur le Palatinat du Sud, le Mittlerer Oberrhein et l’Alsace du Nord. Ses membres sont des autorités régionales :
+					<ul>
+						<li>Du côté palatin : les Landkreise Germersheim, Südliche Weinstraße et Südwestpfalz; les villes de Germersheim et Landau ainsi que le Verband Region Rhein-Neckar;</li>
+						<li>Du côté badois : les Landkreise Karlsruhe et Rastatt, les villes de Baden-Baden, Karlsruhe et Rastatt ainsi que le Regionalverband Mittlerer Oberrhein;</li>
+						<li>Du côté alsacien : le Département du Bas-Rhin, la Région Grand Est, ainsi que la ville d‘Haguenau</li>
+					</ul>
+					Aujourd’hui, le GECT Eurodistrict PAMINA, initialement fondé en tant que « REGIO PAMINA », a son siège dans la maison de l’ancienne Douane à Lauterbourg, directement situé à la frontière franco-allemande. Depuis ici, l’Eurodistrict ne met en pratique non seulement ses propres projets concernant les thèmes divers comme la jeunesse, la mobilité, l’économie, et la formation, mais propose également une plateforme regroupant des compétences, et agit en tant qu’intermédiaire pour encourager la solidarité territoriale.
+				</div>
+				<div>
+					Sur la base du jeu de société « Le Passe-Partout PAMINA », l’Eurodistrict PAMINA est l’initiateur et le porteur de ce projet. 
+				</div>
+			</div>
+			<div class="allPart" id="c2det">
+				<h2>Eurodistrict Strasbourg-Ortenau</h2>
+				<div class="imgCenter">
+					<a href="http://www.eurodistrict.eu" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/strasbourg_ortenau.png" alt="Logo Eurodistrict Strasbourg-Ortenau" />
+					</a>
+				</div>
+				<div>
+					L’Eurodistrict est un territoire européen pilote, une « petite Europe » destinée à favoriser les échanges transfrontaliers, développer des projets et faciliter la vie quotidienne des habitants.
+				</div><br>
+				<div>
+					Il comprend les 61 communes de l’Eurométropole de Strasbourg et de la Communauté de communes du canton d’Erstein ainsi que les 51 communes de l’Ortenaukreis.
+				</div>
+				<div>
+					Ses priorités sont le bilinguisme, l’économie, la mobilité et l’environnement. La participation des citoyens et des associations du territoire permet de construire un programme d’actions partagé par l’ensemble de la population des deux rives du Rhin.
+				</div>
+				<div><br>
+					<b>Suivez-nous !</b>
+					<div>Internet: www.eurodistrict.eu</div>
+					<div>Facebook: @EurodistrictStrasbourgOrtenau</div>
+					<div>Twitter: @eurodistrict</div>
+				</div>
+			</div>
+			<div class="allPart" id="c3det">
+				<h2>Landkreis Breisgau-Hochschwarzwald</h2>
+				<div class="imgCenter">
+					<a href="http://www.breisgau-hochschwarzwald.de" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/landkreis_breisgau.png" alt="Logo Landkreis Breisgau-Hochschwarzwald" />
+					</a>
+				</div><br/>
+				<div>
+					Le Landkreis Breisgau-Hochschwarzwald est situé dans le sud-ouest du Bade-Wurtemberg et est composé de 50 communes. 
+					Le Landkreis en soi fait partie de la Région Südlicher Oberrhein dans le district de Fribourg.
+				</div><br>
+				<div>
+					Le Landratsamt a son siège à Fribourg-en-Brisgau. Le Landkreis Breisgau-Hochschwarzwald a une frontière commune de 40km avec le Haut-Rhin alsacien. C’est ainsi qu´est née la coopération transfrontalière avec le Landkreis.
+				</div><br>
+				<div>
+					En tant qu’acteur politique régional, le Landkreis poursuit les objectifs suivants :
+					<ul>
+						<li>Coopération avec les administrations françaises et suisses ainsi que les collectivités territoriales sous forme de coopérations administratives pour traiter les questions communes de voisinage</li>
+						<li>Représentations des intérêts du Landkreis dans les commissions transfrontalières, comme la Conférence du Rhin Supérieure, le Conseil du Rhin Supérieur, l´Eurodistrict ou la Région Métropole du Rhin Supérieur.</li>
+						<li>Promouvoir les projets transfrontaliers, par exemple les microprojets</li>
+					</ul>
+					Le Landkreis Breisgau-Hochschwarzwald est responsable du projet Passe-Partout pour l´Eurodistrict Region Freiburg-Centre et Sud Alsace. 
+					<div>Site internet: www.lkbh.de</div>
+					
+				</div>
+			</div>
+			<div class="allPart" id="c4det">
+				<h2>Eurodistrict de Bâle</h2>
+				<div class="imgCenter">
+					<a href="http://www.eurodistrictbasel.eu" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/bale.png" alt="Logo Eurodistrict de Bâle" />
+					</a>
+				</div>
+				<div>
+					L'Eurodistrict Trinational de Bâle est au service des villes et communes des trois pays qui forment ensemble l'Agglomération trinationale de Bâle, véritable agglomération plantée sur trois pays.
+					Son territoire comprend :
+					<ul>
+						<li>Du côté suisse : les communes des cantons de Bâle-Ville et de Bâle-Campagne, le Planungsverband Fricktal Regio (Argovie), les arrondissements de Thierstein (SO) et Dorneck (SO), le Forum Schwarzbubenland du Canton de Soleure</li>
+						<li>Du côté allemand : les communes du Landkreis Lörrach, ainsi que les villes de Wehr et Bad Säckingen</li>
+						<li>Du côté français : la Communauté d'Agglomération des trois frontières.</li>
+					</ul>
+					L’Eurodistrict Trinational de Bâle a son siège Maison TRIRHENA Palmrain, Pont du Palmrain, 68128 Village-Neuf. Le Président actuel est Monsieur Lukas Ott, maire de Liestal en Suisse et les Vice-Présidents sont respectivement Madame Marion Dammann, Landrätin du Landkreis Lörrach en Allemagne et Monsieur Jean-Marc Deichtmann, premier Vice-président de Saint-Louis Agglomération.
+				</div>
+				<div>
+					L’Eurodistrict Trinational de Bâle est une plate-forme de gouvernance politique au service des élus des trois pays, que ce soit pour développer des projets en commun ou aborder toutes les questions transfrontalières.
+				</div>
+			</div>
+			<!--  -->
+			<!-- Institutions -->
+			<div class="allPart" id="i1det">
+				<h2>Regierungspräsidium Karlsruhe</h2>
+				<div class="imgCenter">
+					<a href="https://rp.baden-wuerttemberg.de/rpk/Abt7/Ref77/Seiten/default.aspx" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/regie_karlsruhe.png" alt="Logo Regierungspräsidium Karlsruhe" />
+					</a>
+				</div><br/>
+				<div>
+					Le Regierungspräsidium Karlsruhe offre une haute compétence et une prise de décision rapide en tant qu’autorité intermédiaire entre les onze ministères du Land et les niveaux administratifs des Landratsämter et des mairies, et assure ceci – dans le cadre de sa responsabilité – pour les citoyennes et citoyens, les Landkreise, les villes et communes, les entreprises commerciales et diverses autres institutions.
+				</div>
+				<div>
+					La dite fonction de regroupement de la présidence, qui, avec ses huit Directions spécialisées, couvre presque l’intégralité des domaines de l’administration du Land, rassemble un spectre de compétences et de performance complet pour les citoyennes et citoyens.
+				</div><br>
+				<div>
+					Le Regierungsbezirk Karlsruhe, en tant que district administratif public, comprend les environnements naturels suivants :
+					<ul>
+						<li>Le fossé rhénan</li>
+						<li>L’Odenwald</li>
+						<li>Le Kraichgau</li>
+						<li>La Forêt-Noire du Nord</li>
+					</ul>
+				</div>
+				<div>
+					Le Service n° 77 – « Assurance de la qualité, développement de qualité, services psycho-scolaires », en tant qu’unité organisationnelle  de la Direction n° 7 – « Ecole et Education », soutient les environ 930 écoles publiques dans le Regierungsbezirk Karlsruhe, avec environ 330 000 élèves et environ 29 000 enseignants dans le développement et l’assurance de qualité. Ceci se caractérise à travers divers conseils, le soutien au niveau de l’autoévaluation, et aussi à travers l’accompagnement du procès et des formations.
+				</div>
+				<div>
+					Ce Service guide et coordonne le conseil et la formation des enseignants pour le développement continu des cours indépendamment du type d’école, dont font également partie toutes les mesures dans le cadre de l’offensive médiatique. Il est responsable de la formation continue, ainsi que de l’évolution du personnel.
+				</div>
+				<div>
+					Le Service n° 77 a également la fonction de coordination de la coopération avec les interlocuteurs pour la formation continue et de conseil au niveau de l’inspection scolaire. De plus, le personnel est l’interlocuteur pour le ministère de l’éducation et pour l’Académie régionale de la Formation continue et le développement professionnel des enseignants (Landesakademie für Fortbildung und Personalentwicklung).
+				</div>
+				<div>
+					Une faculté exceptionnelle du Service n°77 est le service scolaire de conseils psychologiques. Il  est responsable des conseils psychologiques dans l’espace scolaire des autorités scolaires publiques et des conseillers pédagogiques spécialisés  comme par exemple les enseignants conseillers, les responsables de prévention et les conseillers du développement de l’école.
+				</div><br>
+				<div>
+					Finalement, le domaine d’activité du Service comprend également des tâches comme la coresponsabilité des élèves et le travail des parents, tout comme la coordination de projets transfrontaliers dans le contexte « L’Europe dans le Rhin supérieur ».
+				</div><br>
+				<div>
+					Le Regierungspräsidium Karlsruhe est partenaire associé du projet de jeu en ligne « Le Passe-Partout ». Le jeu plateau « Le Passe-Partout PAMINA », qui est à l’origine de ce projet, a déjà été accompagné, piloté et évalué pédagogiquement par des conseillères pédagogiques du Regierungspräsidium Karlsruhe. Conjointement avec les conseillers pédagogiques et éducatifs de l’Académie de Strasbourg et de la Aufsichts- und Dienstleistungsdirektion Sud de Rhénanie-Palatinat, elles vont désormais partager les connaissances spécifiques nécessaires sur la version du jeu en ligne, dans le cadre de formations continues pour les enseignants.
+				</div>
+			</div>
+			<div class="allPart" id="i2det">
+				<h2>Académie de Strasbourg</h2>
+				<div class="imgCenter">
+					<a href="https://www.ac-strasbourg.fr/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/academie_strasbourg.png" alt="Logo Académie de Strasbourg" />
+					</a>
+				</div>
+				<div>
+					<embed id="pdfViewer" src="../../img/Logos_generique/Chiffres_cles_2017_Langues.pdf" width="100%" height="700" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+				</div><br>
+				<div>
+					 L’académie de Strasbourg correspond à l’Alsace et se situe dans la région Grand Est. Elle couvre deux départements : le Bas-Rhin (67) et le Haut-Rhin (68). Elle est divisée en 6 bassins de formation et 11 districts. Plus d’informations sur l’Académie dans sa présentation.
+				</div>
+			</div>
+			<div class="allPart" id="i3det">
+				<h2>Réseau Canopé</h2>
+				<div class="imgCenter">
+					<a href="https://www.reseau-canope.fr/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/Canope.png" alt="Logo Réseau Canopé" />
+					</a>
+				</div>
+				<br>
+				<div>
+					Placé sous tutelle du ministère de l’Éducation nationale, Réseau Canopé édite des ressources pédagogiques transmédias (imprimé, web, mobile, TV), répondant aux besoins de la communauté éducative. Acteur majeur de la refondation de l’école, il conjugue innovation et pédagogie pour faire entrer l’École dans l’ère du numérique.
+				</div>
+				<br>
+				<div>
+					Renforcer l’action de la communauté éducative en faveur de la réussite des élèves : telle est la mission fondatrice de Réseau Canopé. Opérateur public présent sur l’ensemble du territoire, Réseau Canopé joue un rôle décisif dans la refondation de l’école en intervenant dans cinq domaines clés : pédagogie ; numérique éducatif ; éducation et citoyenneté ; arts, culture et patrimoine ; documentation.
+					Réseau Canopé s’investit au quotidien auprès des acteurs de l’éducation, pour placer son expertise au service de ceux qui œuvrent chaque jour pour la réussite de tous les élèves.
+				</div>
+			</div>
+			<div class="allPart" id="i4det">
+				<h2>Ministerium für Bildung des Landes Rheinland-Pfalz</h2>
+				<div class="imgCenter">
+					<a href="https://bm.rlp.de" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/reignGrand.png" alt="Logo Ministerium für Bildung des Landes Rheinland-Pfalz" />
+					</a>
+				</div>
+				<div>
+					Le ministère de l'Education est l'un des neuf ministères du gouvernement de la Rhénanie-Palatinat. Le siège du ministère se trouve à Mayence, la capitale du Land. Le ministère est dirigé par la ministre de l’Education Dr. Stefanie Hubig.
+				</div>
+				<div>
+					Le ministère de l'Education supervise l'enseignement général et professionnel. Le ministère est également chargé de la supervision de l’enseignement préélémentaire. 
+				</div><br>
+				<div>
+					Le ministère :
+					<ul>
+						<li>développe et garantit la qualité de l'enseignement et la qualité de l’école</li>
+						<li>définit l’organisation des cursus scolaires et des filières</li>
+						<li>est chargé de l’attribution des postes d’enseignants aux établissements scolaires</li>
+						<li>s’occupe de la formation des enseignants</li>
+						<li>supervise l'enseignement préélémentaire</li>
+					</ul>
+				</div>
+				<div>
+					Le ministère de l'Education est partenaire cofinanceur du projet.
+				</div>
+			</div>
+
+			<div class="allPart" id="i5det">
+				<h2>Aufsichts- und Dienstleistungsdirektion</h2>
+				<div class="imgCenter">
+					<a href="https://add.rlp.de" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/reing.png" alt="Logo Aufsichts- und Dienstleistungsdirektion" />
+					</a>
+				</div>
+				<div>
+					La Aufsichts-und Dienstleistungsdirektion est une autorité administrative centrale du Land de Rhénanie-Palatinat ayant son siège à Trèves.
+				</div>
+				<div>
+					Ses domaines de compétences sont caractérisés par une grande diversité thématique.
+				</div>
+				<div>
+					D’autres sites sont les bureaux extérieurs à Neustadt an der Weinstraße et à Coblence.
+				</div>
+				<div>
+					Un domaine de responsabilité important est la division « Ecoles », au sein de laquelle environ    1 600 et plus de 41 000 enseignants sont suivis et administrés.
+				</div>
+				<div>
+					Habituellement, la filiale de Neustadt suit les coopérations pédagogiques dans la région du Rhin Supérieur, lors desquelles des projets scolaires binationaux sont promus et suivis, en relation avec l’objectif d’élargir les connaissances linguistiques, ainsi que les compétences interculturelles. Ainsi,  une base permettant de s’identifier avec la région du Rhin Supérieur est créée.
+				</div>
+				<div>
+					Le Projet « Le Passe-Partout » est très bénéfique à cette fin.
+				</div>
+				<div>
+					La Rhénanie-Palatinat coopère avec un tandem pilote binational dans sa période d’essai, pour ensuite préparer la diffusion.
+				</div>
+				<div>
+					L’inspection des écoles et les écoles projet dans le Palatinat du Sud participent à ce projet avec l’aimable soutien du Ministère de l’Education.
+				</div>
+			</div>
+			<!--  -->
+			<!-- Centre Multimedias -->
+			<div class="allPart" id="m1det">
+				<h2>Kreismedienzentrum Freiburg</h2>
+				<div class="imgCenter">
+					<a href="http://www.kmz-freiburg.de/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/KMZ_freiburg.png" alt="Logo Kreismedienzentrum Freiburg" />
+					</a>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+			<div class="allPart" id="m2det">
+				<h2>Medienzentrum Südliche Weinstraße – Landau</h2>
+				<div class="imgCenter">
+					<a href="http://www.medienzentrum-suew-landau.de/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/landau.png" alt="Logo Medienzentrum Südliche Weinstraße – Landau" />
+					</a>
+				</div><br/>
+				<div>
+					Le Medienzentrum Südliche Weinstraße – Landau en Palatinat est une institution municipale du Kreis Südliche Weinstraße, ainsi que de la ville de Landau.
+				</div>
+				<div>
+					Nous soutenons des écoles, des séminaires d’études, des universités, des établissements de formation pour jeunes et adultes, des associations ainsi que des services du Kreis Südliche Weinstraße et de la ville de Landau en Palatinat.
+				</div>
+				<div>
+					Ainsi, nous proposons, dans notre salle de conférence disposant d’un équipement moderne et d’un Smartboard, des formations continues régionales pour les enseignants, et les conseillons sur le choix, l’achat, et l’utilisation de nouveaux médias. 
+				</div>
+				<div>
+					A côté de la location de DVD et de cassettes VHS, notre Medienzentrum dispose d’une multitude d’appareils qui peuvent être empruntés.
+					Dans le projet « Le Passe-Partout », le Medienzentrum a entre autres contribué au développement du jeu en ligne, est impliqué dans l’organisation des formations, et soutient les écoles de son territoire lors de la création de défis.
+				</div>
+			</div>
+			<div class="allPart" id="m3det">
+				<h2>Centre des médias de Karlsruhe</h2>
+				<div class="imgCenter">
+					<a href="https://www.lmz-bw.de/landesmedienzentrum/medienzentren/stadtmedienzentrum-karlsruhe-am-lmz.html" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/media_karlsruhe.png" alt="Logo Centre des médias de Karlsruhe" />
+					</a>
+				</div>
+				<div>
+					Le centre des médias de Karlsruhe (SMZ KA) au Landesmedienzentrum BW est le centre de compétence des médias communal pour le domaine de l'éducation de la ville de Karlsruhe. D’une part nous fournissons des médias (DVD et par téléchargement), ainsi qu'une large gamme d'équipements multimédia pour l'enseignement et l’utilisation en classe. D’autre part, nous conseillons et soutenons  l'éducation dans l'utilisation pratique de nos offres. Nous complétons ce portefeuille par des ateliers et des conférences sur les médias numériques (TIC) dans le cadre de l’enseignement. 
+				</div>
+				<div>
+					Dans le cadre du projet « Passe-Partout - Weltenbummler », nous proposons des ateliers et nous soutenons les écoles participant au projet sur les questions de l'utilisation pratique du jeu en classe.
+				</div>
+			</div>
+			<!--  -->
+			<!-- Associations -->
+			<div class="allPart" id="as1det">
+				<h2>Fédération des Maisons des Jeunes et de la Culture d’Alsace</h2>
+				<div class="imgCenter">
+					<a href="https://fdmjc-alsace.fr" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/federation_jeunes.png" alt="Logo Fédération des Maisons des Jeunes et de la Culture d’Alsace" />
+					</a>
+				</div><br/>
+				<div>
+					La FDMJC Alsace est une association d’Education Populaire dont le but est de faire prendre conscience à la population, aux jeunes comme aux adultes, de leurs aptitudes à développer leur personnalité et à se préparer à devenir des citoyens actifs et responsables d’une communauté vivante. De par son histoire et la nature de ses composants, le réseau de la FDMJC Alsace est vaste et pluriel. Le siège de l’association est basé à Geispolsheim dans l’Eurométropole de Strasbourg, mais elle couvre directement ou indirectement 354 communes sur 557 dans le Département du Bas-Rhin. L’ensemble des actions développées par les membres du réseau a pour socle commun, les questions liées à l’animation enfance, jeunesse, l’organisation de manifestations, le développement d’activités de proximité, avec pour objectif de répondre aux besoins des familles et des publics accueillis, tout en veillant à la mise en œuvre de démarche devant contribuer à la formation de citoyenne, au développement de l’engagement et à la participation, des membres, des publics dans les projets et les dynamiques locales.
+				</div>
+				<div>
+					Le réseau associatif de la FDMJC Alsace est composé de 62 associations qui sont quasiment toutes implantées en milieu rural, 17 d’entre elles ont des salariés permanents et 45 ne fonctionnent qu’avec l’énergie de militants et bénévoles aidées par quelques animateurs d’activités.
+				</div>
+				<div>
+					La FDMJC Alsace accompagne les collectivités locales dans le cadre de la mise en œuvre d’accueils périscolaires avec comme ligne politique de n’être présent sur les territoires que lorsque nous agissons sur la question de la jeunesse, et ce, afin de pouvoir accompagner les territoires sur une politique enfance/jeunesse qui soit globale et transversale.
+				</div>
+				<div>
+					La FDMJC Alsace est également fortement impliquée à la Confédération des MJC de France : membres du Conseil d’Administration et du Bureau, participation aux commissions jeunesse et culture, participation aux rencontres des directeurs régionaux…
+				</div>
+				<div>
+					Membre du Réseau-Jeunesse-PAMINA, la FDMJC Alsace s’engage dans le projet du « Passe-Partout » en tant que partenaire de l’éducation extra-scolaire.
+				</div>
+			</div>
+			<div class="allPart" id="as2det">
+				<h2>Réseau Express Jeunes</h2>
+				<div class="imgCenter">
+					<!-- <a href="https://fdmjc-alsace.fr" target="_blank"> -->
+					  <img class="imgLogo" src="../../img/Logos_generique/express.png" alt="Logo Réseau Express Jeunes" />
+					<!-- </a> -->
+				</div><br/>
+				<div>
+					Le Réseau Express Jeunes représente le groupe d’experts multiplicateurs jeunesse de la Conférence du Rhin supérieur qui s’engage en tant que partenaire de l’éducation extra-scolaire
+				</div>
+			</div>
+			<div class="allPart" id="as3det">
+				<h2>L’Association de Développement et de Coopération Régionale « Olza »</h2>
+				<div class="imgCenter">
+					<a href="http://www.olza.pl/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/olza.png" alt="Logo Association de Développement et de Coopération Régionale Olza" />
+					</a>
+				</div><br/>
+				<div>
+					L’Association de Développement et de Coopération Régionale « Olza » a été créée en 1998 à Cieszyn. Son objectif consiste à soutenir le développement local et régional des territoires localisés le long de la frontière polono-tchèque et de la rivière Olza.  
+				</div>
+				<div>
+					L’Association est composée de 17 collectivités locales, telles que : Brenna, Chybie, Cieszyn, Dębowiec, Godów, Goleszów, Hażlach, Istebna, Jastrzębie-Zdrój, Jasienica, Jaworze, Skoczów, Strumień, Ustroń, Wisła, Zebrzydowice et Powiat Cieszyński [District de Cieszyn].
+				</div>
+				<div>
+					Les missions de l’Association « Olza » :
+					<ul>
+						<li>recherche de nouvelles possibilités de développement économique;</li>
+						<li>démarche éducative ayant pour objectif de favoriser l’échange  d’informations, d’expériences et de connaissances concernant le développement local et régional;</li>
+						<li>soutien aux relations internationales, surtout transfrontalières polono-tchèques;</li>
+						<li>activité d’édition, de formation et promotionnelle;</li>
+						<li>activité pro-européenne;</li>
+						<li>activité touristique;</li>
+						<li>soutien aux actions ayant pour objectif d’améliorer l’environnement naturel;</li>
+						<li>coopération avec d’autres institutions nationales et étrangères.</li>
+					</ul>
+					L’Association « Olza » est également signataire polonais de l’accord de coopération régionale nommé « Euroregion Śląsk Cieszyński - Těšínské Slezsko » [Eurorégion Silésie de Cieszyn]. L’Association Régionale de Coopération Territoriale de Silésie de Cieszyn est signataire tchèque de cet accord. Les deux associations coopèrent depuis 1998, en préparant et réalisant différents projets communs, financés par les fonds européens, nationaux et leurs propres.
+				</div>
+				<div>
+					En 2012, l’Eurorégion Silésie de Cieszyn a créé en collaboration avec l’Eurodistrict PAMINA un modèle de jeu de plateau  « Le Passe-Partout PAMINA » qui est devenu une source d’inspiration pour cette version numérique.  
+				</div>
+				<div>
+					L’Association « Olza » est un partenaire associé dans le projet « Le Passe-Partout – Der Weltenbummler ».
+				</div>
+			</div>
+			<div class="allPart" id="as4det">
+				<h2>L’association régionale de coopération territoriale Teschen Silesia</h2>
+				<div class="imgCenter">
+					<a href="http://www.irsts.cz/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/logo_RSTS.png" alt="Logo association régionale de coopération territoriale Teschen Silesia" />
+					</a>
+				</div>
+				<div>
+					L’association régionale de coopération territoriale Teschen Silesia (RSTS) représente la partie tchèque de l’Euroregion Těšínské Slezsko à la frontière tchéco-polonaise. Le RSTS travaille avec son partenaire polonais “Olza” depuis 1998, en établissant et en mettant en œuvre une variété de projets communs, financés par des ressources européennes, nationales ou propres. Selon leurs statuts, ils soutiennent le développement de la région frontalière dans beaucoup de domaines de coopération, notamment :
+					<ul>
+						<li>Le tourisme</li>
+						<li>L’éducation</li>
+						<li>Le sport et le développement communautaire</li>
+						<li>Le développement durable (surtout les politiques d’air pur)</li>
+						<li>Gestion des crises</li>
+					</ul>
+					Le RSTS rassemble 42 municipalités de la région frontalière tchèque, parmi lesquelles Havířov, Karviná, Třinec, et Český Těšín sont les plus grandes. Le RSTS est situé dans un ancien bureau de douane à Český Těšín, qui est la partie tchèque de l’ancienne ville de Cieszyn, divisée entre la Pologne et la Tchécoslovaquie en 1921. Le chemin pour se rendre au bureau d’un collègue polonais est inférieur à un kilomètre, et passe par les rues historiques de la ville de Cieszyn.
+				</div><br/>
+				<div>
+					En 2012, l’Eurorégion Śląsk Cieszyński - Těšínské Slezsko a créé en collaboration avec l’Eurodistrict PAMINA un modèle de jeu de plateau  « Le Passe-Partout PAMINA » qui est devenu une source d’inspiration pour cette version numérique.
+				</div>
+				<div>
+					L’association RSTS est un partenaire associé dans le projet « Le Passe-Partout – Der Weltenbummler ».
+				</div>
+			</div>
+			<!--  -->
+			<!-- Autres -->
+			<div class="allPart" id="a1det">
+				<h2>Interreg V Rhin supérieur</h2>
+				<div class="imgCenter">
+					<a href="http://www.interreg-oberrhein.eu/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/interreg_rhin_sup.png" alt="Logo Interreg V Rhin supérieur" />
+					</a>
+				</div><br/>
+				<div>
+					INTERREG est un programme de l’Union européenne pour soutenir la coopération transfrontalière. Il permet le financement de projets menés conjointement de part et d’autre des frontières, grâce au soutien du Fonds européen de développement régional (FEDER).
+				</div><br/>
+				<div>
+					La zone du programme INTERREG V Rhin Supérieur se compose de territoires français, allemands et suisses : le Palatinat du Sud, le pays de Bade, les deux Départements alsaciens du Haut-Rhin et du Bas-Rhin de la Région Grand Est et la Suisse du nord-ouest. Le rôle de l’autorité de gestion est assuré par la Région Grand Est. Elle héberge également l’équipe technique en charge de l’accompagnement des porteurs de projets et du suivi des opérations financées.
+				</div><br/>
+				<div>
+					Les projets cofinancés dans le cadre du programme INTERREG Rhin Supérieur couvrent une vaste palette de thématiques et répondent à une stratégie élaborée spécifiquement pour ce territoire. Les porteurs et partenaires de projets sont eux aussi de natures très diverses.
+				</div><br/>
+				<div>
+					Le programme INTERREG Rhin Supérieur dispose pour la période 2014-2020 d’une enveloppe de 109,7 millions d’euros, ce qui constitue le plus important budget alloué à un programme INTERREG dans le Rhin Supérieur depuis le lancement de l’initiative en 1989.
+				</div><br/>
+				<div>
+					Le projet du jeu en ligne « Le Passe-Partout – Der Weltenbummler » contribue à l’objectif spécifique 12 « Augmentation de l’identification des citoyens à l’espace transfrontalier du Rhin supérieur ». A cette fin, 60% des coûts du projet sont financés par le programme INTERREG.
+				</div>
+			</div>
+			<div class="allPart" id="a2det">
+				<h2>GeoRhena</h2>
+				<div class="imgCenter">
+					<a href="http://www.georhena.eu/" target="_blank">
+					  <img class="imgLogo" src="../../img/Logos_generique/georhena.png" alt="Logo GeoRhena" />
+					</a>
+				</div>
+				<div>
+					GeoRhena est un outil géographique (Geo), permettant de mieux connaître le bassin rhénan (Rhena). Essentiel à la coopération transfrontalière entre la France, l’Allemagne, et la Suisse, il permet de collecter, d’assembler et d’harmoniser des données thématiques sur le bassin rhénan, comme par exemple les flux touristiques, l’évolution démographique, les axes routiers et ferroviaires, la localisation des espaces naturels protégés, etc.
+				</div>
+				<div>
+					À partir de ces informations, GeoRhena produit d’une part des cartes au format PDF, et d’autre part, un Géoportail sera bientôt accessible pour accéder aux données et cartes de manière interactive. Ainsi, sont mis en évidence les points communs et les différences entre les trois pays composant le « Rhin Supérieur », de même que la diversité de l’espace transfrontalier.
+				</div><br/>
+				<div>
+					GeoRhena est au service de la coopération transfrontalière. Il travaille pour les experts de la « Conférence du Rhin Supérieur (CRS) » (www.conferencerhin- sup.org) et tous les acteurs menant une action transfrontalière.
+				</div><br/>
+				<div>
+					Il a mis à disposition les cartes, sur lesquelles repose le « Passe-Partout – Weltenbummler ».
+				</div>
+			</div>
+			<!--  -->
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+	function $_GET(param) {
+		var vars = {};
+		window.location.href.replace( location.hash, '' ).replace( 
+			/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+			function( m, key, value ) { // callback
+				vars[key] = value !== undefined ? value : '';
+			}
+		);
+
+		if ( param ) {
+			return vars[param] ? vars[param] : null;	
+		}
+		return vars;
+	}
+	var partenaire = $_GET('partenaire');
+	if (partenaire != null) {
+		$('#partView').hide();
+		$('.active').html($('#'+partenaire)[0].innerText);
+		$('#partDetails').show();
+		var partDetail = $('#'+partenaire)[0].id+"det";
+		$('#'+partDetail).show();
+	}
+
+	$('p').click(function() {
+		$('#partView').hide();
+		$('.active').html($(this)[0].innerText);
+		$('#partDetails').show();
+		var partDetail = $(this)[0].id+"det";
+		$('#'+partDetail).show();
+		// $('#chgTitle')[0].innerText = $(this)[0].innerText;
+	});
+</script>
+</body>
+</html>

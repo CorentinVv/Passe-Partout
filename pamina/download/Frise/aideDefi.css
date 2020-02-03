@@ -1,0 +1,120 @@
+
+/*---------------AIDE!------------------*/
+#aidePopup {
+/*    width: 29.4%;
+    height: 84%;*/
+    background-color: #F4ECE6;
+    position: absolute;
+    width: 470px;
+    height: 790px;
+    top: 0%;
+    left: 30%;
+}
+
+#headHelp {
+    height: 10%;
+    width: 100%;
+    margin-top: 10%;
+    display: block;
+}
+
+#lieuHelp {
+    width: 90%;
+    background-color: #65669B;
+    padding-left: 5%;
+    padding-top: 2%;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 20px;
+    /*box-shadow: 4px 3px 2px 0px black;*/
+}
+
+#edHelp {
+  padding-left: 5%;
+  font-weight: bold;
+}
+
+#bodyHelp {
+  height: 75%;
+  display: block;
+}
+
+#questionHelp {
+    color: #65669B;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: arial;
+    padding-left: 4%;
+    width: 95%;
+}
+
+#imgsHelp {
+    display: inline-flex;
+    width: 90%;
+    height: 150px;
+    padding: 2% 5% 2% 5%;
+}
+
+#txtHelp {
+    height: 20%;
+    overflow: overlay;
+    display: block;
+    width: 90%;
+    padding: 0% 5% 4% 5%;
+    word-wrap: break-word;
+}
+
+#mediaHelp {
+    height: 160px;
+    display: block;
+    width: 90%;
+    padding: 2% 5% 2% 5%;
+}
+
+#footerHelp {
+    display: block;
+    background-color: #65669B;
+    width: 100%;
+    color: white;
+    height: 5%;
+}
+
+
+#helpPopup {
+  position: absolute;
+  width: 100%;
+}
+#aideClose {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  left: 95%;
+}
+
+
+
+#cacheAide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(93, 85, 72, 0.69);
+  overflow: visible;
+}
+
+/*#aidePopup2 {
+  position: absolute;
+    width: 90%; ----
+    height: 93%; ----
+    width: 1001px;
+    height: 697px;
+    margin-left: 16%;
+    margin-top: 2.2%;
+    background-color: lightgreen;
+    border: solid 4px black;
+    overflow: auto;
+}*/
+
+/*---------------AIDE!------------------*/

@@ -1,5 +1,6 @@
 # Passe-Partout
-Le jeu Passe Partout
+
+[Le jeu Passe Partout](https://www.mon-passepartout.eu/ "Jeu Passe Partout")
 
 En 2012, l’Eurodistrict PAMINA et l’Euroregion Těšínské Slezsko - Śląsk Cieszyński, à la frontière polono-tchèque, ont développé conjointement le jeu de plateau « Le Passe-Partout PAMINA », permettant de découvrir les deux régions transfrontalières de manière ludique. Il a été mis à disposition gratuitement aux écoles primaires faisant partie du réseau « écoles voisines », où les élèves eux-mêmes, leurs enseignants ainsi que les conseillers pédagogiques de l’Académie de Strasbourg et des autorités scolaires allemandes avaient l’idée de créer une version en ligne de ce jeu. À la suite de l’échange constructif avec ses partenaires du projet, l’Eurodistrict PAMINA a repris cette idée, qui peut être mise en œuvre dans le cadre d’un projet Interreg V Rhin supérieur. Contrairement au jeu de plateau, le jeu pédagogique en ligne n’est pas développé uniquement pour l’Eurodistrict PAMINA, mais il est élaboré en coopération avec l’Eurodistrict Strasbourg-Ortenau, l’Eurodistrict Region Freiburg/Centre et Sud Alsace, et avec l’Eurodistrict Trinational de Bâle pour l’ensemble du Rhin supérieur.
 
